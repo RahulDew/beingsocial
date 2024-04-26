@@ -31,7 +31,7 @@ const LoginPage = () => {
           textAlign="center"
           m="1rem auto"
           bgcolor={palette.background.alt}
-          borderRadius="10px"
+          borderRadius="20px"
         >
           <Typography fontWeight="bold" variant="h6" sx={{ mb: "1.5rem" }}>
             Welcome to BeingSocial,

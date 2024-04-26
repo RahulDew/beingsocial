@@ -71,7 +71,7 @@ const Navbar = () => {
           {isNonMobileScreens && (
             <FlexBetween
               bgcolor={neutralLight}
-              borderRadius="10px"
+              borderRadius="15px"
               padding="0.2rem 1rem"
               gap="3rem"
             >
@@ -93,9 +93,9 @@ const Navbar = () => {
                 <DarkMode sx={{ fontSize: "25px" }} />
               )}
             </IconButton>
-            <Message sx={{ fontSize: "25px" }} />
+            {/* <Message sx={{ fontSize: "25px" }} />
             <Notifications sx={{ fontSize: "25px" }} />
-            <Help sx={{ fontSize: "25px" }} />
+            <Help sx={{ fontSize: "25px" }} /> */}
             <FormControl variant="standard" value={fullName}>
               <Select
                 value={fullName}
@@ -103,7 +103,7 @@ const Navbar = () => {
                 sx={{
                   bgcolor: neutralLight,
                   gap: "2rem",
-                  borderRadius: "6px",
+                  borderRadius: "15px",
                   p: "0.2rem 1.5rem",
                   "& .MuiSvgIcon-root": {
                     pr: "0.25rem",
@@ -189,7 +189,7 @@ const Navbar = () => {
                   </>
                 )}
               </Button>
-              <Container
+              {/* <Container
                 sx={{
                   display: "flex",
                   gap: "0.5rem",
@@ -226,14 +226,14 @@ const Navbar = () => {
               >
                 <Help sx={{ fontSize: "25px" }} />
                 <Typography sx={{ fontSize: "0.9rem" }}>Help</Typography>
-              </Container>
+              </Container> */}
               <FormControl variant="filled" value={fullName}>
                 <Select
                   value={fullName}
                   input={<InputBase />}
                   sx={{
                     bgcolor: neutralLight,
-                    borderRadius: "6px",
+                    borderRadius: "15px",
                     gap: "2rem",
                     p: "0.2rem 1.5rem",
                     "& .MuiSvgIcon-root": {

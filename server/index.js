@@ -63,10 +63,11 @@ app.use("/posts", postRoutes);
 const PORT = process.env.PORT || 8000;
 
 const connectDB = async () => {
-  mongoose.connect(process.env.MONGODB_URL, {
+  await mongoose.connect(process.env.MONGODB_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });
+  console.log("DB Connected!");
   app.listen(PORT, () => {
     console.log(`Server is listening on Port http://localhost:${PORT}`);
 

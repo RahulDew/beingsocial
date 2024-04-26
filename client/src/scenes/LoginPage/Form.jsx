@@ -217,7 +217,7 @@ const Form = () => {
                 <Box
                   gridColumn="span 4"
                   border={`1px solid ${neutralMedium}`}
-                  borderRadius="5px"
+                  borderRadius="20px"
                   p="1rem"
                 >
                   <Dropzone
@@ -232,7 +232,7 @@ const Form = () => {
                         {...getRootProps()}
                         border={`2px dashed ${primaryMain}`}
                         p="1rem"
-                        borderRadius="5px"
+                        borderRadius="20px"
                         sx={{ "&:hover": { cursor: "pointer" } }}
                       >
                         <input {...getInputProps()} />
@@ -331,47 +331,3 @@ const Form = () => {
 };
 
 export default Form;
-
-{
-  /* <div className="flex flex-col justify-start items-start">
-  <label className="text-base font-medium leading-6 text-slate-700">
-    Profile Image File
-  </label>
-  <div
-    className={`w-full border-2 border-dashed ${
-      values.profileImageFile ? "border-blue-600" : "border-slate-500"
-    } rounded-md my-2`}
-  >
-    <Dropzone
-      acceptedFiles=".jpg, .jpeg, .png"
-      multiple={false}
-      onDrop={(acceptedFiles) =>
-        setFieldValue("profileImageFile", acceptedFiles[0])
-      }
-    >
-      {({ getInputProps, getRootProps }) => (
-        <div {...getRootProps()} className="p-3 w-full cursor-copy">
-          <input {...getInputProps()} />
-          <div className="flex flex-col justify-center items-center">
-            <FiUploadCloud
-              className={`text-4xl ${
-                values.profileImageFile ? "text-blue-600" : "text-slate-500"
-              }`}
-            />
-            {!values.profileImageFile ? (
-              <p className="text-slate-600">Add or Drop Picture here...</p>
-            ) : (
-              <p className="text-blue-600 font-semibold">
-                {values.profileImageFile && values.profileImageFile.name}
-              </p>
-            )}
-          </div>
-        </div>
-      )}
-    </Dropzone>
-  </div>
-  <p className="text-red-500 text-left text-sm">
-    {touched.profileImageFile && errors.profileImageFile}
-  </p>
-</div>; */
-}

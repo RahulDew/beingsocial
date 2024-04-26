@@ -65,7 +65,7 @@ const CreatePost = ({ picturePath }) => {
       // clearing the Dropdown field and Image field
       setPostImage(null);
       setPostDescription("");
-      setIsImage(!isImage)
+      setIsImage(!isImage);
     }
   };
 
@@ -81,7 +81,7 @@ const CreatePost = ({ picturePath }) => {
             width: "100%",
             backgroundColor: palette.neutral.light,
             p: "0.7rem 1rem",
-            borderRadius: "10px",
+            borderRadius: "15px",
             fontSize: "0.95rem",
           }}
         />
@@ -90,7 +90,7 @@ const CreatePost = ({ picturePath }) => {
         <Box
           gridColumn="span 4"
           border={`1px solid ${palette.neutral.medium}`}
-          borderRadius="5px"
+          borderRadius="10px"
           p="1rem"
           m="1rem auto"
         >
@@ -105,7 +105,7 @@ const CreatePost = ({ picturePath }) => {
                   {...getRootProps()}
                   border={`2px dashed ${palette.primary.main}`}
                   p="1rem"
-                  borderRadius="5px"
+                  borderRadius="10px"
                   width={postImage ? "89%" : "100%"}
                   sx={{ "&:hover": { cursor: "pointer" } }}
                 >
@@ -143,7 +143,7 @@ const CreatePost = ({ picturePath }) => {
           sx={{
             backgroundColor: palette.neutral.light,
             padding: "0.5rem 0.6rem",
-            borderRadius: "7px",
+            borderRadius: "10px",
             "&:hover": {
               backgroundColor: palette.primary.light,
             },
@@ -159,7 +159,7 @@ const CreatePost = ({ picturePath }) => {
               sx={{
                 backgroundColor: palette.neutral.light,
                 padding: "0.5rem 0.6rem",
-                borderRadius: "7px",
+                borderRadius: "10px",
                 "&:hover": {
                   backgroundColor: palette.primary.light,
                 },
@@ -173,7 +173,7 @@ const CreatePost = ({ picturePath }) => {
               sx={{
                 backgroundColor: palette.neutral.light,
                 padding: "0.5rem 0.6rem",
-                borderRadius: "7px",
+                borderRadius: "10px",
                 "&:hover": {
                   backgroundColor: palette.primary.light,
                 },
@@ -192,7 +192,7 @@ const CreatePost = ({ picturePath }) => {
           disabled={!postDescription}
           sx={{
             padding: "0.36rem 2rem",
-            borderRadius: "7px",
+            borderRadius: "10px",
             fontSize: "0.9rem",
           }}
         >

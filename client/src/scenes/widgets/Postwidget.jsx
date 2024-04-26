@@ -65,7 +65,7 @@ const Postwidget = ({
             alt="post"
             width="100%"
             height="100%"
-            style={{ borderRadius: "10px", margin: "1rem auto" }}
+            style={{ borderRadius: "20px", margin: "1rem auto" }}
           />
         )}
         <Typography
@@ -123,7 +123,7 @@ const Postwidget = ({
                   sx={{
                     color: palette.neutral.main,
                     backgroundColor: palette.neutral.light,
-                    borderRadius: "5px",
+                    borderRadius: "20px",
                     p: "0.5rem",
                     my: "0.3rem",
                   }}
